@@ -6,20 +6,22 @@
 module.exports = function getLoveTrianglesCount(preferences = []) {
  
 	for (var i = 0; i < preferences.length; i++){
+		
+  	f_p = i;
+  	first = preferences[f_p];
   	
-  	first = preferences[i];
-  	f_p = i + 1;
 	  	
 		  	if (mass.indexOf(f_p) == -1 && first != f_p){
 
-			  	second = preferences[first-1];
 			  	s_p = first-1;
-
+			  	second = preferences[s_p];
+			  	
 			  	
 				  	if (mass.indexOf(s_p) == -1 && second != s_p+1){
 
-					  	third = preferences[second-1];
+					  	
 					  	th_p = second - 1;
+					  	third = preferences[th_p];
 
 					  	if (mass.indexOf(th_p) == -1 && third != th_p+1){
 
