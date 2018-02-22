@@ -11,7 +11,7 @@ module.exports = function getLoveTrianglesCount(preferences = []) {
   	first = preferences[f_p];
   	tf = f_p + 1;
 	  	
-		  	if (mass.indexOf(f_p) == -1 && first != f_p){
+		  	if (mass.indexOf(f_p) == -1 && first != tf){
 
 			  	s_p = first-1;
 			  	second = preferences[s_p];
